@@ -17,4 +17,4 @@ class Customers(models.Model):
     customer=models.CharField(max_length=48,null=True,unique=True)
     customer_adress=models.CharField(max_length=96,null=True)
     customer_rezume=models.TextField(max_length=1024,blank=True)
-    published=models.DateField(auto_now_add=True,blank=False,null=True)
+    published=models.DateField(auto_now_add=True,blank=True,null=True)

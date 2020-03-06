@@ -1,4 +1,15 @@
 from django.contrib import admin
-from .models import Customers
+from .models import Customers, Sidelki
+
 # Register your models here.
-admin.site.register(Customers)
+
+@admin.register(Customers)
+class CustomersAdmin(admin.ModelAdmin):
+    list_display = ['fio','diagnoz','vozrast','nachato','zaversheno','blacklist']
+    search_fields = ['telefon1','telefon2','diagnoz']
+
+
+@admin.register(Sidelki)
+class SidelkiAdmin(admin.ModelAdmin):
+    list_display = ['fio','strana','vozrast','v_bolnitse','prihodiashaya','ozhidaet','telefon1','blacklist']
+    search_fields = ['strana','list_ozidanie','fio']

@@ -35,6 +35,7 @@ class Sidelki(models.Model):
     strana = models.CharField(max_length=96, blank=False, unique=False, null=True)
     passport= models.CharField(max_length=192, blank=False, unique=False, null=True)
     vozrast = models.IntegerField(default=1950,)
+    medic = models.BooleanField(default=False)
     blacklist = models.BooleanField(default=False)
     photo1 = models.ImageField(blank=True, upload_to='images/sidelki', height_field=300)
     photo2 = models.ImageField(blank=True, upload_to='images/sidelki', height_field=600)

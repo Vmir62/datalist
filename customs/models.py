@@ -17,6 +17,7 @@ class Customers(models.Model):
     dop_document1=models.FileField(upload_to='cover/customers/docs',blank=True)
     dop_document2 = models.FileField(upload_to='cover/customers/docs', blank=True)
     dop_document3 = models.FileField(upload_to='cover/customers/docs', blank=True)
+    predoplata = models.DecimalField(default=0, max_digits=8, decimal_places=2)
     price=models.DecimalField(default=0,max_digits=8,decimal_places=2)
     telefon1= models.CharField(max_length=48,null=True,unique=True)
     telefon2 = models.CharField(max_length=48, null=True, unique=True)

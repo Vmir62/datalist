@@ -14,7 +14,7 @@ class Customers(models.Model):
     nachato=models.DateField(blank=True,null=True,default=None)
     zaversheno = models.DateField(blank=True, null=True, default=None)
     diagnoz= models.TextField(max_length=1024,blank=True)
-    dop_document1=models.FileField(upload_to='cover/customers/docs',blank=True)
+    dop_document1=models.FileField(upload_to='cover/customers/docs', blank=True)
     dop_document2 = models.FileField(upload_to='cover/customers/docs', blank=True)
     dop_document3 = models.FileField(upload_to='cover/customers/docs', blank=True)
     predoplata = models.DecimalField(default=0, max_digits=8, decimal_places=2)

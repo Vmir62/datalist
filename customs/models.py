@@ -10,7 +10,7 @@ class Customers(models.Model):
     blacklist=models.BooleanField(default=False)
     opisanie_bolnoy=models.TextField(max_length=4096,null=True,blank=False)
     photo=models.ImageField(blank=True,upload_to='images/customers',height_field=300)
-    vozrast=models.IntegerField(default=16,)
+    vozrast=models.IntegerField(default=1)
     nachato=models.DateField(blank=True,null=True,default=None)
     zaversheno = models.DateField(blank=True, null=True, default=None)
     diagnoz= models.TextField(max_length=1024,blank=True)

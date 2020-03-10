@@ -42,6 +42,7 @@ class Sidelki(models.Model):
     opisanie = models.TextField(max_length=4096, null=True, blank=False)
     v_bolnitse = models.BooleanField(default=False)
     prihodiashaya = models.BooleanField(default=False)
+    prozhivaet = models.BooleanField(default=False)
     ozhidaet = models.BooleanField(default=False)
     telefon1 = models.CharField(max_length=48, null=True, unique=True)
     telefon2 = models.CharField(max_length=48, null=True, unique=True)

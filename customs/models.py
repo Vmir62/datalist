@@ -20,9 +20,9 @@ class Customers(models.Model):
     predoplata = models.DecimalField(default=0, max_digits=8, decimal_places=2)
     price=models.DecimalField(default=0,max_digits=8,decimal_places=2)
     telefon1= models.CharField(max_length=48,null=True,unique=True)
-    telefon2 = models.CharField(max_length=48, null=True, unique=True)
-    customer_adress=models.CharField(max_length=96,null=True)
-    bolnoy_adress = models.CharField(max_length=96, null=True)
+    telefon2 = models.CharField(max_length=48, null=True, unique=False)
+    customer_adress=models.CharField(max_length=182,null=True)
+    bolnoy_adress = models.CharField(max_length=182, null=True)
     rezume=models.TextField(max_length=1024,blank=True)
 
     def __str__(self):

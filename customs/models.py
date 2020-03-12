@@ -45,7 +45,7 @@ class Sidelki(models.Model):
     prozhivaet = models.BooleanField(default=False)
     ozhidaet = models.BooleanField(default=False)
     telefon1 = models.CharField(max_length=48, null=True, unique=True)
-    telefon2 = models.CharField(max_length=48, null=True, unique=True)
+    telefon2 = models.CharField(max_length=48, null=True, unique=False)
     adres_registr = models.CharField(max_length=96, null=True)
     adres_proziv = models.CharField(max_length=96, null=True)
     document1recomend = models.FileField(upload_to='cover/sidelki/docs', blank=True)

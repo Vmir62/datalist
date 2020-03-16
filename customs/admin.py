@@ -11,5 +11,5 @@ class CustomersAdmin(admin.ModelAdmin):
 
 @admin.register(Sidelki)
 class SidelkiAdmin(admin.ModelAdmin):
-    list_display = ['fio','strana','vozrast','v_bolnitse','prihodiashaya','prozhivaet','ozhidaet','telefon1','medic']
+    list_display = ['fio','strana','vozrast','v_bolnitse','prihodiashaya','prozhivaet','ozhidaet','telefon1','medic','zapolneno']
     search_fields = ['strana','list_ozidanie','fio']

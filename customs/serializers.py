@@ -10,4 +10,4 @@ class CustomersSerializer(serializers.ModelSerializer):
 class SidelkiSerializer(serializers.ModelSerializer):
     class Meta():
         model = Sidelki
-        fields = ['fio','strana','vozrast','v_bolnitse','prihodiashaya','prozhivaet','ozhidaet','telefon1','medic','adres_proziv']
+        fields = ['fio','strana','vozrast','v_bolnitse','prihodiashaya','prozhivaet','ozhidaet','telefon1','medic','adres_proziv','zapolneno']

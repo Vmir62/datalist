@@ -58,6 +58,7 @@ class Sidelki(models.Model):
     document2anketa = models.FileField(upload_to='cover/sidelki/docs', blank=True)
     document3anketa = models.FileField(upload_to='cover/sidelki/docs', blank=True)
     list_ozidanie = models.TextField(max_length=1024, blank=True)
+    zapolneno = models.DateField(blank=True, null=True, default=None)
     
     
     def __str__(self):
